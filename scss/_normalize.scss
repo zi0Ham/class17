@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: $defaultFont;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+main,
+main>section {
+  @include flexColum
+}
+
+details {
+  display: none;
+}
+
+.title-page {
+  display: none;
+}

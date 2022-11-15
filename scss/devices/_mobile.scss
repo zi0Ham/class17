@@ -1,0 +1,119 @@
+@media (min-width: $mediaSizeMob) {
+  nav {
+    padding-top: 10%;
+    padding-bottom: 10%;
+
+    >section {
+      padding-top: 1%;
+      padding-bottom: 1%;
+      height: 4vh;
+      border-top: 1px solid $defaultGray;
+      border-bottom: 1px solid $defaultGray;
+    }
+
+    >article {
+      display: flex;
+      column-gap: 5vh;
+      text-align: center;
+      align-items: center;
+    }
+
+    ul {
+      display: none;
+    }
+
+    i {
+      font-size: $iconSizeMob;
+    }
+
+    h1 {
+      text-transform: uppercase;
+      width: 40%;
+      font-weight: 300;
+      font-size: 50px;
+    }
+  }
+
+  // header
+  header {
+    position: relative;
+    height: 50vh;
+
+    article {
+      width: 100%;
+      height: 100%;
+      background-color: rgba(50, 50, 50, .4);
+      display: flex;
+      @include flexColum;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      row-gap: 4vh;
+
+      >aside {
+        @include flexColum;
+        color: white;
+        text-align: center;
+        align-items: center;
+        row-gap: 2vh;
+      }
+    }
+
+    p {
+      font-size: 14px;
+    }
+
+    h1 {
+      text-transform: capitalize;
+      color: white;
+      font-weight: 300;
+      font-size: 50px;
+    }
+  }
+
+  video {
+    position: absolute;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+  }
+
+
+
+
+
+  // features
+  .features {
+    color: $defaultColor;
+    padding: 1%;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    row-gap: 5vh;
+
+    >section {
+      @include flexColum;
+      row-gap: 4vh;
+    }
+
+    article {
+      @include flexElement(row, 3vh, 0);
+    }
+
+    aside {
+      @include flexElement(column, 0, 3vh)
+    }
+
+    h3 {
+      font-size: 28px;
+    }
+
+    i {
+      font-size: 76px;
+      font-weight: 700;
+    }
+  }
+
+
+
+}
