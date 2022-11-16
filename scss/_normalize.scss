@@ -10,7 +10,12 @@ html {
 
 main,
 main>section {
-  @include flexColum
+  @include flexColumn;
+}
+
+main>section {
+  padding-top: 5vh;
+  padding-bottom: 5vh;
 }
 
 details {

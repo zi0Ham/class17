@@ -1,27 +1,41 @@
-@mixin flexColum {
+@mixin flexColumn {
   display: flex;
   flex-direction: column;
 }
 
-@mixin flexElement($direction, $colum, $row) {
+@mixin flexElement($direction, $column, $row) {
   display: flex;
   flex-direction: $direction;
-  column-gap: $colum;
+  column-gap: $column;
   row-gap: $row;
 }
 
-@mixin flexConten($direction: row, $justify: center, $align: center, $colum: 0, $row: 0, ) {
+@mixin flexContent($direction: row, $justify: center, $align: center, $column: 0, $row: 0, ) {
   display: flex;
   flex-direction: $direction;
   justify-content: $justify;
   align-items: $align;
-  column-gap: $colum;
+  column-gap: $column;
   row-gap: $row;
 }
 
-// @include flexConten;
-// @include flexConten(column);
-// @include flexConten(column, center, flex-end);
+@mixin flexText {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin bgImg($url) {
+  background-image: url();
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+// @include flexContent;
+// @include flexContent(column);
+// @include flexContent(column, center, flex-end);
 
 
 // @mixin directionsColum{}
