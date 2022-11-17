@@ -417,4 +417,87 @@ textarea {
     color: #108AC1;
     background-color: gainsboro;
   }
+  .features {
+    flex-direction: row;
+    -moz-column-gap: 5vh;
+         column-gap: 5vh;
+  }
+  .activities > article {
+    background-position: center;
+  }
+  .activities > section {
+    width: unset;
+  }
+  .activities figure {
+    flex-direction: row;
+    -moz-column-gap: 3vh;
+         column-gap: 3vh;
+    padding: 3%;
+  }
+  .activities img {
+    width: 15vh;
+    height: 15vh;
+  }
+  .company img {
+    width: 50%;
+  }
+  figcaption {
+    row-gap: 2vh;
+    align-items: flex-start;
+  }
+  figcaption a {
+    width: 25%;
+    font-size: 18px;
+    transition: 0.4s;
+  }
+  figcaption a:hover {
+    background-color: #909090;
+    color: white;
+  }
+  figcaption > section {
+    width: 90%;
+  }
+  figcaption article > a {
+    width: 40%;
+  }
+  .contact {
+    padding-right: 10%;
+  }
+  .contact > section {
+    align-items: flex-end;
+  }
+  .contact figure {
+    align-items: flex-start;
+  }
+  .contact form {
+    width: 50%;
+  }
+  .contact figcaption {
+    width: 50vh;
+  }
+  .contact img {
+    height: 30vh;
+    -o-object-position: top;
+       object-position: top;
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 50vh;
+  }
+  [type=submit]:hover {
+    color: white;
+    background-color: #108AC1;
+  }
+  .faq {
+    width: 100%;
+    align-items: center;
+  }
+  .faq > section {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 4vh;
+  }
+  .accordion-button {
+    border-top: 1px solid var(--bs-accordion-);
+  }
 }/*# sourceMappingURL=style.css.map */
